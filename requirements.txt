@@ -1,0 +1,4 @@
+numpy
+scipy
+Theano==0.9.0
+Lasagne==0.1
