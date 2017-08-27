@@ -1,6 +1,6 @@
 # Saliency-CNN-IMAGE-QUALITY-ASSESSMENT  
   
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)  
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/SenJia/Saliency-CNN-Image-Quality-Assessment/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/SenJia/Saliency-CNN-Image-Quality-Assessment/?branch=master)  
 Paper: [PDF](https://link.springer.com/article/10.1007/s11042-017-5070-6)  
 Model: [link](https://drive.google.com/open?id=0B-NkNGhp_DJQNFdwZzBBdjY1dDA)
