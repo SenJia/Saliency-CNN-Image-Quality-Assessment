@@ -1,7 +1,9 @@
 # Saliency-CNN-IMAGE-QUALITY-ASSESSMENT
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-Paper: [PDF](https://link.springer.com/article/10.1007/s11042-017-5070-6)
+Paper: [PDF](https://link.springer.com/article/10.1007/s11042-017-5070-6)  
+Model: [link](https://drive.google.com/open?id=0B-NkNGhp_DJQNFdwZzBBdjY1dDA)
+
 
 BIBTEX:
 
