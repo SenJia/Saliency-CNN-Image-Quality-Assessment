@@ -24,7 +24,6 @@ class QualityNet(object):
         self._parameters = []
         self._initialized = False
         self._SEED = SEED
-        self.counter = 0
         self.device_id = ""
   
     def build_graph(self):
@@ -111,18 +110,6 @@ class QualityNet(object):
                  initializer=tf.contrib.layers.xavier_initializer(),
                  trainable=trainable
                  )
-            mean = tf.get_variable(
-                'm', [filter_size, filter_size, out_filters],
-                 QualityNet._dtype(),
-                 initializer=tf.contrib.layers.xavier_initializer(),
-                 trainable=trainable
-                 )
-            variance = tf.get_variable(
-                'v', [filter_size, filter_size, out_filters],
-                 QualityNet._dtype(),
-                 initializer=tf.contrib.layers.xavier_initializer(),
-                 trainable=trainable
-                 )
 
             bias = tf.get_variable("bias",shape=[out_filters],
                 initializer=tf.constant_initializer(1),
@@ -132,7 +119,6 @@ class QualityNet(object):
             if save and not self._initialized:
                 self._parameters.append(kernel)
                 self._parameters.append(bias)
-                self.counter += 2
             out = tf.nn.conv2d(x, kernel, strides, padding='SAME')
             out = tf.nn.bias_add(out, bias)
         return out 
