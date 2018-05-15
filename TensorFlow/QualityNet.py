@@ -31,7 +31,8 @@ class QualityNet(object):
       self._build_model()
       self._initialized = True
 
-    def get_parameters(self):
+    @property
+    def parameters(self):
         return self._parameters
 
     def _build_model(self):
